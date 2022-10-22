@@ -1,0 +1,30 @@
+   -----19/10/22------
+   "Aim" to build is complete the chat room.
+   Technlogies inclueded ejs, express, socket.io, node.js
+   Cons message does not appears on sender side.
+   Pros clean, no style here I can focus on operations.
+   
+   "description": It is very simple prototype, it is working,
+   upon three concepts from socket "connection", "event" and
+   "emit".
+
+   "Summary": The server and client both are connected by 
+   events. server and client both has same method to share
+   the message that named emit(). this all are lay upon 
+   "connnection".
+
+   -----20/10/22-----
+   "Aim" I want to add extra feature like show the username of
+   sender,and name. it was possible by sever-side object 
+   maintance. 
+   
+   "working": In previos server catch message from client and 
+   broadcast, except sender it deliver message to all client
+   now the emit is append to according event. Through the emit
+   can the server can respond sender.
+   'username', 'name' is submited by client by prompt box each
+   message consist username data so, the server directly 
+   broadcast the user infomation with message. The client-side
+   -engine will disply the message with username.
+
+   "Summary": 
