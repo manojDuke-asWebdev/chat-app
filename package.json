@@ -17,8 +17,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts start || npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "react-scripts build || npx tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "call": "node index",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -39,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.2"
   }
 }
