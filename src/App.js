@@ -1,11 +1,22 @@
 import React from 'react'
-import io from 'socket.io-client'
-import { RouterProvider } from 'react-router-dom'
-import router from "./Router"
+import {
+  Routes,
+  Route
+} from 'react-router-dom'
+
+import Home from './pages/home'
+import Login from './pages/login'
+import Register from './pages/register'
+import Setting from './pages/setting'
 
 const App = props => {
   return <>
-    <RouterProvider router={router} />
+   <Routes>
+    <Route path='/' element={< Home />} exact />
+    <Route path='login' element={< Login />} />
+    <Route path='register' element={< Register />} />
+    <Route path='setting' element={< Setting />} />
+   </Routes>
   </>
 }
 
